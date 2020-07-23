@@ -4,12 +4,15 @@
 - stop typing and your keyboard backlight switches off (after a few seconds delay)
 - the service is only active during selected hours (at night, for example!)
 
-You can configure a few options in /etc/akbl.conf:
+
+
+##### You can configure a few options in /etc/akbl.conf:
 - active hours
 - delay for switching off the backlight after the last keypress
 
 
-The install.sh script installs the necessary files and enables the service for AKBL
+
+##### The install.sh script installs the necessary files and enables the service for AKBL
 
 `main file: /usr/local/bin/akbl.sh `
 
@@ -20,10 +23,13 @@ The install.sh script installs the necessary files and enables the service for A
 `(systemd) restart after resume service file: /lib/systemd/system/akbl-resume.service`
 
 
-Ready to try? Download and extract zip file and run install.sh (as root)
+
+##### Ready to try? Download and extract zip file and run install.sh (as root)
 
 > sudo ./install.sh -i (for installation)
 
 > sudo ./install.sh -u (for uninstallation)
+
+
 
 *This works with Fedora on a T480s Laptop... so no guarantee it will work for you :/*
