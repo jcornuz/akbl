@@ -23,7 +23,10 @@ config file: /etc/akbl.conf
 
 
 Ready to try? Download and extract zip file and run install.sh (as root)
+
 -i for install
+
 -u for uninstall
+
 
 This works with Fedora on a T480s Laptop... so no guarantee it will work for you :/
