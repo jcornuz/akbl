@@ -1,0 +1,10 @@
+[Unit]
+Description=Restart Automatic Keyboard BackLight service
+After=suspend.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl --no-block restart akbl.service
+
+[Install]
+WantedBy=suspend.target

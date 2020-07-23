@@ -1,0 +1,11 @@
+[Unit]
+Description=Automatic Keyboard BackLight Service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/bash /usr/local/bin/akbl.sh
+
+[Install]
+WantedBy=graphical-session.target
+
