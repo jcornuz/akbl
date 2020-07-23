@@ -12,15 +12,18 @@ You can configure a few options in /etc/akbl.conf:
 The install.sh script installs the necessary files and service for AKBL
 
 `main file: /usr/local/bin/akbl.sh 
+
 config file: /etc/akbl.conf
+
 (systemd) start / stop service file: /lib/systemd/system/akbl.service
+
 (systemd) restart after resume service file: /lib/systemd/system/akbl-resume.service`
 
 
 Ready to try? Download and extract zip file and run install.sh (as root)
 
-> -i for install
+> sudo ./install.sh -i (for installation)
 
-> -u for uninstall
+> sudo ./install.sh -u (for uninstallation)
 
 This works with Fedora on a T480s Laptop... so no guarantee it will work for you :/
