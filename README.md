@@ -13,11 +13,11 @@ The install.sh script installs the necessary files and service for AKBL
 
 `main file: /usr/local/bin/akbl.sh `
 
-config file: /etc/akbl.conf
+`config file: /etc/akbl.conf`
 
-(systemd) start / stop service file: /lib/systemd/system/akbl.service
+`(systemd) start / stop service file: /lib/systemd/system/akbl.service`
 
-(systemd) restart after resume service file: /lib/systemd/system/akbl-resume.service`
+`(systemd) restart after resume service file: /lib/systemd/system/akbl-resume.service`
 
 
 Ready to try? Download and extract zip file and run install.sh (as root)
