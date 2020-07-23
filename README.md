@@ -6,10 +6,10 @@
 
 You can configure a few options in /etc/akbl.conf:
 - active hours
-- delay for switching off the backlight
+- delay for switching off the backlight after the last keypress
 
 
-The install.sh script installs the necessary files and service for AKBL
+The install.sh script installs the necessary files and enables the service for AKBL
 
 `main file: /usr/local/bin/akbl.sh `
 
@@ -26,4 +26,4 @@ Ready to try? Download and extract zip file and run install.sh (as root)
 
 > sudo ./install.sh -u (for uninstallation)
 
-This works with Fedora on a T480s Laptop... so no guarantee it will work for you :/
+*This works with Fedora on a T480s Laptop... so no guarantee it will work for you :/*
