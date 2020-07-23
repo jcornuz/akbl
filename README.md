@@ -2,8 +2,7 @@
  
 - start typing and your keyboard backlight switches on
 - stop typing and your keyboard backlight switches off (after a few seconds delay)
-
-The keyboard backlight is only active during selected hours (at night...)
+- the service is only active during selected hours (at night, for example!)
 
 You can configure a few options in /etc/akbl.conf:
 - active hours
@@ -22,6 +21,7 @@ The install.sh script installs the necessary files and service for AKBL
 
 
 Ready to try? Download and extract zip file and run install.sh (as root)
+
 > -i for install
 
 > -u for uninstall
