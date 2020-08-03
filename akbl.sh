@@ -45,12 +45,15 @@ if [ ! -f "$backlight" ]; then
     exit 1
 fi
 
+current_time_epoch=$(date +%s)
+startup_time_epoch=$(date +%s -d "today $startup_time")
+end_time_epoch=$(date +%s -d "today $end_time")
 
+        
 while true; do
 
-    current_time=$(date +%H:%M)
-    
-    if [[ "$current_time" > "$startup_time" ]] || [[ "$current_time" < "$end_time" ]]; then        
+    if [ $current_time_epoch -ge $startup_time_epoch ] || [ $current_time_epoch -le $end_time_epoch ]; then        
+        
         # get input from keyboard
         POLL=$(timeout $polling_time_s cat $keyboard)
     
@@ -78,11 +81,10 @@ while true; do
     
     else
         # outside active hours, sleep until starup time
-        echo "sleep until $startup_time"
-        sleep $(( $(date +%s -d "today $startup_time") - $(date +%s) ))
-
-	#sleep for 10 minutes
-#	echo "outside active hours: sleep for 10 mins"
-#	sleep 600
+        echo "Sleep until $startup_time"
+        sleep $((startup_time_epoch-current_time_epoch))
     fi
+    
+    current_time_epoch=$(date +%s)
+
 done
